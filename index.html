@@ -5,22 +5,134 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Mi Sitio Web</title>
+    <title>Aprendiendo Git xd</title>
 </head>
 
 <body>
     <header>
-        <h1>Bienvenido a Mi Sitio Web</h1>
+        <h1>Que es Git</h1>
         <p>
-            Locaso esta wea xdd
+            Git es un sistema de control de versiones distribuido que se utiliza para rastrear cambios en el código
+            fuente durante el desarrollo de software. Aquí hay una descripción general básica de cómo funciona Git:
         </p>
     </header>
     <section>
-        <p>Esta es una página web simple.</p>
+        <div>
+            <h4>Repositorio</h4>
+            <p>Git almacena la información en un repositorio. Puedes iniciar un nuevo repositorio o clonar uno
+                existente.</p>
+        </div>
+        <div>
+            <h4>Áreas de Trabajo</h4>
+            <p>Git tiene tres áreas principales de trabajo: el directorio de trabajo (working directory), el área de
+                preparación (staging area o index), y el repositorio local.</p>
+        </div>
+        <div>
+            <h4>Flujo de trabajo básico</h4>
+            <p>Cuando trabajas en un proyecto, haces cambios en los archivos en tu directorio de trabajo.
+                Luego, seleccionas qué cambios deseas incluir en tu próximo commit al agregar esos cambios al área de
+                preparación utilizando git add.
+                Después de que hayas preparado tus cambios, puedes confirmarlos con un commit utilizando git commit.
+                Esto guarda una instantánea de los archivos preparados en tu repositorio local.</p>
+        </div>
+        <div>
+            <h41>Historial de Cambios</h4>
+                <p>Git mantiene un historial de cambios, lo que permite retroceder a versiones anteriores si es
+                    necesario.</p>
+        </div>
+        <div>
+            <h4>Ramificaciones (Branches)</h4>
+            <p>Puedes crear ramas para trabajar en nuevas características o correcciones de errores sin afectar la rama
+                principal (generalmente llamada master o main).
+                Las ramas te permiten experimentar y fusionar tus cambios cuando estén listos.</p>
+        </div>
+        <div>
+            <h4>Fusiones (Merges)</h4>
+            <p>Después de que hayas completado el trabajo en una rama, puedes fusionar esos cambios de nuevo a la rama
+                principal.</p>
+        </div>
+        <div>
+            <h4>Repositorios remotos</h4>
+            <p>Git es distribuido, lo que significa que puedes trabajar en un repositorio local y también en uno remoto.
+                Los cambios se pueden enviar y recibir entre repositorios locales y remotos.</p>
+        </div>
+        <div>
+            <h4>Conflictos</h4>
+            <p>Puede haber conflictos cuando dos ramas tienen cambios en las mismas líneas de código. Git te alertará si
+                esto sucede y te permitirá resolver esos conflictos manualmente.</p>
+        </div>
     </section>
-    <footer>
-        <p>&copy; 2023 Mi Sitio Web</p>
-    </footer>
+    <section>
+        <h3>Algunos comandos de Git comunes son:</h3>
+        <div>
+            <li>git init: Inicia un nuevo repositorio.</li>
+            <li>git clone: Clona un repositorio existente.</li>
+            <li>git add: Agrega cambios al área de preparación.</li>
+            <li>git commit: Crea un nuevo commit con los cambios preparados.</li>
+            <li>git push: Envía cambios a un repositorio remoto.</li>
+            <li>git pull: Obtiene cambios del repositorio remoto.</li>
+            <li>git merge: Fusiona ramas.</li>
+        </div>
+    </section>
+    <section>
+        <h3>Te proporcionaré los pasos y comandos básicos. Asumiré que ya tienes Git instalado en tu sistema si aun no
+            lo tiene instalado vea un video de como instalar git <a
+                href="https://youtu.be/cYLapo1FFmA?si=Hw7q7xXUIZ4rQNsg">Clic Aqui</a></h3>
+        <div>
+            <h2>Crear un nuevo repositorio</h2>
+            <div>
+                <h5>Paso 1</h5>
+                <p>mkdir MiSitioWeb</p>
+            </div>
+            <div>
+                <h5>Paso 2</h5>
+                <p>cd MiSitioWeb</p>
+            </div>
+            <div>
+                <h5>Paso 3</h5>
+                <p>git init</p>
+            </div>
+            <div>
+                <h5>Paso 4</h5>
+                <p>code . #en caso que uses visual estudio code</p>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div>
+            <h5>Paso 5</h5>
+            <p>Crear archivos HTML y CSS:</p>
+        </div>
+        <div>
+            <h5>Paso 6</h5>
+            <p>Crear tu css</p>
+        </div>
+        <div>
+            <h5>Paso 7</h5>
+            <p>git add index.html styles.css <span>#aqui agregas todos los archivos que tienes que subir</span></p>
+        </div>
+        <div>
+            <h5>Paso 8</h5>
+            <p>git commit -m "Puedes poner cualquier comentario es solo para verificar las cosas que hiciste"</p>
+        </div>
+        <div>
+            <h5>paso 9</h5>
+            <p>git status</p>
+        </div>
+    </section>
+    <section>
+        <h2>Crear un repositorio remoto (opcional)</h2>
+        <p>Puedes crear un repositorio en una plataforma como GitHub y luego vincular tu repositorio local con el
+            remoto. Sigue las instrucciones en la plataforma que elijas.</p>
+        <h4>Subir tu código al repositorio remoto</h4>
+        <p>Estas comandos sirven para subir tu proyecto a github</p>
+        <ul>
+            <li>git remote add origin https://github.com/tu_usuario/tu_repositorio.git</li>
+            <li>git branch -M main</li>
+            <li>git push -u origin main</li>
+        </ul>
+    </section>
+
 </body>
 
 </html>
